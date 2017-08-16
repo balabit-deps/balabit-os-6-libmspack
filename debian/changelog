@@ -1,3 +1,17 @@
+libmspack (0.5-1ubuntu0.16.04.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: DoS and possible code execution via crafted CHM file
+    - debian/patches/CVE-2017-6419.patch: reject negative output length in
+      SpanInfo in mspack/chmd.c, mspack/lzxd.c, mspack/mszipd.c,
+      mspack/qtmd.c.
+    - CVE-2017-6419
+  * SECURITY UPDATE: DoS via crafted CAB file
+    - debian/patches/CVE-2017-11423.patch: fix error handling in
+      mspack/cabd.c.
+    - CVE-2017-11423
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Aug 2017 07:42:41 -0400
+
 libmspack (0.5-1) unstable; urgency=medium
 
   * New upstream fix-only release:
