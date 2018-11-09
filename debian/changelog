@@ -1,3 +1,15 @@
+libmspack (0.5-1ubuntu0.16.04.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-18585.patch: Ensure file names are valid in chmd.c
+    - CVE-2018-18585
+  * SECURITY UPDATE: One byte buffer overflow -
+    - debian/patches/CVE-2018-18584.patch: Ensure input buffer is large
+      enough in cab.h
+    - CVE-2018-18584
+
+ -- Alex Murray <alex.murray@canonical.com>  Fri, 09 Nov 2018 10:35:47 +1030
+
 libmspack (0.5-1ubuntu0.16.04.2) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service
