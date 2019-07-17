@@ -1,3 +1,12 @@
+libmspack (0.5-1ubuntu0.16.04.4) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Buffer overflow
+    - debian/patches/CVE-2019-1010305.patch: length checks when looking
+      for control files in mspack/chmd.c.
+    - CVE-2019-1010305
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 17 Jul 2019 12:04:22 -0300
+
 libmspack (0.5-1ubuntu0.16.04.3) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service
